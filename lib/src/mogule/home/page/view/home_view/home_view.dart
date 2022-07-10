@@ -133,7 +133,7 @@ class HomeView extends StatelessWidget {
   BottomAppBar bottomAppbar() {
     return BottomAppBar(
       color: Colors.white,
-      shape: CircularNotchedRectangle(),
+      shape: const CircularNotchedRectangle(),
       notchMargin: 5,
       child: Row(
         mainAxisSize: MainAxisSize.max,

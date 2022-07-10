@@ -8,19 +8,8 @@ import 'fixture.dart';
 class ApiClient {
   ApiClient(Client client) : _client = client;
 
-  // ignore: unused_field
   final Client _client;
   String? token;
-
-  // Future<Map<String, String>> getHeader() async {
-  //   final headers = <String, String>{
-  //     'Content-Type': 'application/json; charset=utf-8',
-  //     'Accept': 'application/json',
-  //   };
-  //   if (token != null) headers['Authorization'] = 'Bearer $token';
-
-  //   return headers;
-  // }
 
   Future<T> responseType<T>(
     Response response,
@@ -44,21 +33,6 @@ class ApiClient {
     }
   }
 
-  // Future<T> get<T>(
-  //   String path, {
-  //   Map<String, dynamic>? params,
-  //   required T Function(String body) fromJson,
-  //   required String fn,
-  // }) async {
-  // final header = await getHeader();
-  // final response = await _client.get(
-  //   buildUri(path, params: params),
-  //   headers: header,
-  // );
-  //   final response = await fakeApi(fn);
-  //   return responseType<T>(response, fromJson);
-  // }
-
   Future<T> post<T>(
     String path, {
     Map<String, dynamic>? body,
@@ -72,44 +46,6 @@ class ApiClient {
     final response = await fakeApi(fn);
     return responseType<T>(response, fromJson);
   }
-
-  // Future<T> patch<T>(
-  //   String path, {
-  //   Map<String, dynamic>? body,
-  //   Map<String, dynamic>? headerParams,
-  //   required T Function(String body) fromJson,
-  //   required String fn,
-  // }) async {
-  // final header = await getHeader();
-  // final response = await _client.patch(
-  //   buildUri(path, params: headerParams),
-  //   body: jsonEncode(body),
-  //   headers: header,
-  // );
-  //   final response = await fakeApi(fn);
-  //   return responseType<T>(response, fromJson);
-  // }
-
-//   Future<T> put<T>(
-//     String path, {
-//     Map<String, dynamic>? body,
-//     required T Function(String body) fromJson,
-//     required String fn,
-//   }) async {
-//     // final header = await getHeader();
-//     // final response = await _client.put(
-//     //   buildUri(path),
-//     //   body: jsonEncode(body),
-//     //   headers: header,
-//     // );
-//     final response = await fakeApi(fn);
-//     return responseType<T>(response, fromJson);
-//   }
-
-//   Uri buildUri(String path, {Map<String, dynamic>? params}) {
-//     final uri = Uri.parse(path);
-//     return uri;
-//   }
 
   Future<Response> fakeApi(String fileName) async {
     final body = await fixture(fileName);

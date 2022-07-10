@@ -86,11 +86,7 @@ class SignInView extends StatelessWidget {
               const PasswordFormField(
                 hintText: 'Пароль',
               ),
-              // SignInEleveted(
-              //   formKey: formKey,
-              //   email: email.text,
-              //   pass: pass.text,
-              // ),
+
               const SizedBox(height: 20),
               SizedBox(
                 width: 153,
@@ -112,11 +108,11 @@ class SignInView extends StatelessWidget {
                   child: const Text('Войти'),
                 ),
               ),
-              SignInEleveted(
-                formKey: formKey,
-                email: email.text,
-                phone: phone.text,
-              ),
+              // SignInEleveted(
+              //   formKey: formKey,
+              //   email: email.text,
+              //   phone: phone.text,
+              // ),
               const SizedBox(height: 15),
               RichText(
                 text: TextSpan(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_page.dart';
-import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_view.dart';
 
 class DrawerPage extends StatelessWidget {
   const DrawerPage({Key? key}) : super(key: key);
@@ -61,57 +60,57 @@ class DrawerPage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 21),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 42),
-            const rowCenter(
+            const RowCenter(
                 path: 'assets/vectors/icon_drawer/icon_driwer1.svg',
                 title: 'Категории'),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer2.svg',
               title: 'Уведомления',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer3.svg',
               title: 'Горячий кэшбэк',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer4.svg',
               title: 'Партнерская программа',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer5.svg',
               title: 'О программе',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer5.svg',
               title: 'FAQ',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer7.svg',
               title: 'Настройки',
             ),
             const SizedBox(height: 14),
-            const containerHeight1(),
+            const ContainerHeight1(),
             const SizedBox(height: 14),
-            const rowCenter(
+            const RowCenter(
               path: 'assets/vectors/icon_drawer/icon_driwer8.svg',
               title: 'Выйти',
             ),
@@ -147,8 +146,8 @@ class DrawerPage extends StatelessWidget {
   }
 }
 
-class containerHeight1 extends StatelessWidget {
-  const containerHeight1({
+class ContainerHeight1 extends StatelessWidget {
+  const ContainerHeight1({
     Key? key,
   }) : super(key: key);
 
@@ -162,8 +161,8 @@ class containerHeight1 extends StatelessWidget {
   }
 }
 
-class rowCenter extends StatelessWidget {
-  const rowCenter({
+class RowCenter extends StatelessWidget {
+  const RowCenter({
     Key? key,
     required this.path,
     required this.title,
