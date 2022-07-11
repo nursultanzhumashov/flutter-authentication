@@ -53,7 +53,6 @@ class SignUpView extends StatelessWidget {
               ),
               PhoneFormField(
                 phone: phone,
-                path: AppAssets.phone,
                 hinText: AppTexts.phoneSignUp,
               ),
               const SizedBox(height: 15),
