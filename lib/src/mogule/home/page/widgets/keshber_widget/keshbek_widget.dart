@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
 
 class KeshbekWidget extends StatelessWidget {
   const KeshbekWidget({
@@ -11,7 +12,7 @@ class KeshbekWidget extends StatelessWidget {
       Row(children: const [
         SizedBox(width: 14),
         Text(
-          'Горящие кешбеки',
+          AppTexts.gorKeshbek,
           style: TextStyle(fontSize: 16),
         ),
         SizedBox(width: 11),
@@ -22,7 +23,7 @@ class KeshbekWidget extends StatelessWidget {
         SizedBox(width: 159),
         InkWell(
           child: Text(
-            'Всё',
+            AppTexts.vse,
             style: TextStyle(fontSize: 12, color: Color(0xff8D8D8D)),
           ),
         )

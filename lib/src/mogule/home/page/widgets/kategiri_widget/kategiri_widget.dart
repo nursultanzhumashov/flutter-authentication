@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
 
 class KategiriWidget extends StatelessWidget {
   const KategiriWidget({
@@ -14,13 +15,13 @@ class KategiriWidget extends StatelessWidget {
           children: const [
             SizedBox(width: 14),
             Text(
-              'Категории',
+              AppTexts.kategiri,
               style: TextStyle(fontSize: 16),
             ),
             SizedBox(width: 245),
             InkWell(
               child: Text(
-                'Всё',
+                AppTexts.vse,
                 style: TextStyle(fontSize: 12, color: Color(0xff8D8D8D)),
               ),
             )

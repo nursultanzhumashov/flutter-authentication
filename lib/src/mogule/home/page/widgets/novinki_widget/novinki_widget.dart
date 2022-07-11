@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/widgets/keshber_widget/keshbek_widget.dart';
 
 class NovinkiWidget extends StatelessWidget {
@@ -12,7 +13,7 @@ class NovinkiWidget extends StatelessWidget {
           children: const [
             SizedBox(width: 14),
             Text(
-              'Новинки',
+              AppTexts.novinki,
               style: TextStyle(fontSize: 16),
             ),
             SizedBox(width: 13),
@@ -23,7 +24,7 @@ class NovinkiWidget extends StatelessWidget {
             SizedBox(width: 219),
             InkWell(
               child: Text(
-                'Всё',
+                AppTexts.vse,
                 style: TextStyle(fontSize: 12, color: Color(0xff8D8D8D)),
               ),
             )

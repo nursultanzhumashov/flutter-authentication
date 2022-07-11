@@ -18,4 +18,9 @@ class AppTexts {
   static const String faq = 'FAQ';
   static const String nastroyki = 'Настройки';
   static const String vyiti = 'Выйти';
+
+  ///HomeView
+  static const String vse = 'Всё';
+  static const String magazin = 'Магазины';
+  static const String novinki = 'Новинки';
 }
