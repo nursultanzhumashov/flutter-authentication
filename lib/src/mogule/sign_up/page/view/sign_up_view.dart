@@ -1,9 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/view/home_view/home_view.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_page.dart';
-import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_view.dart';
 import 'package:oracle_digital_app/src/widgets/aut_card_fecebook_google/fecebook_google_card.dart';
 import 'package:oracle_digital_app/src/widgets/password_form_field/password_form_field.dart';
 import 'package:oracle_digital_app/src/widgets/phone_form_field/phone_form_field.dart';
@@ -41,7 +41,7 @@ class SignUpView extends StatelessWidget {
                 height: 54,
               ),
               const Text(
-                'Войти через социальные сети',
+                AppTexts.socialNetworks,
                 style: TextStyle(fontSize: 18, color: Color(0xff515151)),
               ),
               const SizedBox(
@@ -54,16 +54,16 @@ class SignUpView extends StatelessWidget {
               PhoneFormField(
                 phone: phone,
                 path: 'assets/vectors/icon_sign_in/icon_phone.svg',
-                hinText: 'Введите номер',
+                hinText: AppTexts.phoneSignUp,
               ),
               const SizedBox(height: 15),
               const PasswordFormField(
-                hintText: 'Введите пароль',
+                hintText: AppTexts.passwordSignUp,
                 //   formKey: formKey, email: email.text, pass: pass.text
               ),
               const SizedBox(height: 15),
               const PasswordFormField(
-                hintText: 'Введите пароль',
+                hintText: AppTexts.passwordSignUp,
                 //   formKey: formKey, email: email.text, pass: pass.text
               ),
               const SizedBox(height: 20),
@@ -83,13 +83,13 @@ class SignUpView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     )),
                   ),
-                  child: const Text('Зарегистрироваться'),
+                  child: const Text(AppTexts.signUp),
                 ),
               ),
               const SizedBox(height: 68),
               RichText(
                 text: TextSpan(
-                    text: 'Войти',
+                    text: AppTexts.signIn,
                     style: const TextStyle(color: Color(0xff225196)),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
