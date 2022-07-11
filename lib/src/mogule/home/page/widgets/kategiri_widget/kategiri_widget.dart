@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 
 class KategiriWidget extends StatelessWidget {
   const KategiriWidget({
@@ -33,129 +34,111 @@ class KategiriWidget extends StatelessWidget {
             children: [
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori1.svg'),
+                KategoriIcon(path: AppAssets.aktivOtdyh),
                 SizedBox(height: 13),
-                KategoriText(title: 'Активный отдых')
+                KategoriText(title: AppTexts.aktivOtdyh)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori2.svg'),
+                KategoriIcon(path: AppAssets.kinoTeatr),
                 SizedBox(height: 13),
-                KategoriText(title: 'Кино и театры')
+                KategoriText(title: AppTexts.kinoTeatr)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori3.svg'),
+                KategoriIcon(path: AppAssets.kafeRestaron),
                 SizedBox(height: 13),
-                KategoriText(title: 'Кафе и рестораны')
+                KategoriText(title: AppTexts.kafeRestaron)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori4.svg'),
+                KategoriIcon(path: AppAssets.dlyaDetei),
                 SizedBox(height: 13),
-                KategoriText(title: 'Для детей')
+                KategoriText(title: AppTexts.dlyaDetei)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori5.svg'),
+                KategoriIcon(path: AppAssets.igrovKluby),
                 SizedBox(height: 13),
-                KategoriText(title: 'Игровые клубы')
+                KategoriText(title: AppTexts.igrovKluby)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori6.svg'),
+                KategoriIcon(path: AppAssets.saynyBanyaOteli),
                 SizedBox(height: 13),
-                KategoriText(title: 'Сауны, бани и отели')
+                KategoriText(title: AppTexts.saynyBanyaOteli)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori7.svg'),
+                KategoriIcon(path: AppAssets.apteki),
                 SizedBox(height: 13),
-                KategoriText(title: 'Аптеки')
+                KategoriText(title: AppTexts.apteki)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori8.svg'),
+                KategoriIcon(path: AppAssets.zoomagazin),
                 SizedBox(height: 13),
-                KategoriText(title: 'Зоомагазины')
+                KategoriText(title: AppTexts.zoomagazin)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori9.svg'),
+                KategoriIcon(path: AppAssets.avtoUslugiTovary),
                 SizedBox(height: 13),
-                KategoriText(title: 'Автоуслуги и товары')
+                KategoriText(title: AppTexts.avtoUslugiTovary)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori10.svg'),
+                KategoriIcon(path: AppAssets.kosmetika),
                 SizedBox(height: 13),
-                KategoriText(title: 'Косметика и парфюмерия')
+                KategoriText(title: AppTexts.kosmetika)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori11.svg'),
+                KategoriIcon(path: AppAssets.optika),
                 SizedBox(height: 13),
-                KategoriText(title: 'Оптика')
+                KategoriText(title: AppTexts.optika)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori12.svg'),
+                KategoriIcon(path: AppAssets.aksesuaru),
                 SizedBox(height: 13),
-                KategoriText(title: 'Аксессуары')
+                KategoriText(title: AppTexts.aksesuaru)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori13.svg'),
+                KategoriIcon(path: AppAssets.tovaryDoma),
                 SizedBox(height: 13),
-                KategoriText(title: 'Товары для дома')
+                KategoriText(title: AppTexts.tovaryDoma)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori14.svg'),
+                KategoriIcon(path: AppAssets.uvelernyeIzdelie),
                 SizedBox(height: 13),
-                KategoriText(title: 'Ювелирные изделия')
+                KategoriText(title: AppTexts.uvelernyeIzdelie)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori15.svg'),
+                KategoriIcon(path: AppAssets.krasotaZdarove),
                 SizedBox(height: 13),
-                KategoriText(title: 'Красота и здровье')
+                KategoriText(title: AppTexts.krasotaZdarove)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori6.svg'),
+                KategoriIcon(path: AppAssets.spaKosmetolog),
                 SizedBox(height: 13),
-                KategoriText(title: 'SPA и косметология')
+                KategoriText(title: AppTexts.spaKosmetolog)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori17.svg'),
+                KategoriIcon(path: AppAssets.himchistka),
                 SizedBox(height: 13),
-                KategoriText(title: 'Химчистка')
+                KategoriText(title: AppTexts.himchistka)
               ]),
               const SizedBox(width: 14),
               Column(children: const [
-                KategoriIcon(
-                    path: 'assets/vectors/icon_kategori/icon_kategori18.svg'),
+                KategoriIcon(path: AppAssets.drugoe),
                 SizedBox(height: 13),
-                KategoriText(title: 'Другое')
+                KategoriText(title: AppTexts.drugoe)
               ]),
               const SizedBox(width: 14),
             ],

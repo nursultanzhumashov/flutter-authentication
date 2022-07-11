@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 
 class FecebookGoogleCard extends StatelessWidget {
   const FecebookGoogleCard({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class FecebookGoogleCard extends StatelessWidget {
           child: IconButton(
               onPressed: () {},
               icon: SvgPicture.asset(
-                'assets/vectors/icon_sign_in/icon_google.svg',
+                AppAssets.google,
               )),
         ),
         const SizedBox(width: 60),
@@ -37,7 +38,7 @@ class FecebookGoogleCard extends StatelessWidget {
           child: IconButton(
               onPressed: () {},
               icon: SvgPicture.asset(
-                'assets/vectors/icon_sign_in/icon_facebook.svg',
+                AppAssets.facebook,
               )),
         ),
       ],

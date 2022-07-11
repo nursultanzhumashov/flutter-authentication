@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_page.dart';
 
 class DrawerPage extends StatelessWidget {
@@ -63,62 +64,60 @@ class DrawerPage extends StatelessWidget {
             const SizedBox(height: 21),
             const ContainerHeight1(),
             const SizedBox(height: 42),
-            const RowCenter(
-                path: 'assets/vectors/icon_drawer/icon_driwer1.svg',
-                title: AppTexts.kategiri),
+            const RowCenter(path: AppAssets.kategiri, title: AppTexts.kategiri),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer2.svg',
+              path: AppAssets.uvedomleni,
               title: AppTexts.uvedomleni,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer3.svg',
+              path: AppAssets.gorKeshbek,
               title: AppTexts.gorKeshbek,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer4.svg',
+              path: AppAssets.partProgramma,
               title: AppTexts.partProgramma,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer5.svg',
+              path: AppAssets.oProgramme,
               title: AppTexts.oProgramme,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer6.svg',
+              path: AppAssets.faq,
               title: AppTexts.faq,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer7.svg',
+              path: AppAssets.nastroyki,
               title: AppTexts.nastroyki,
             ),
             const SizedBox(height: 14),
             const ContainerHeight1(),
             const SizedBox(height: 14),
             const RowCenter(
-              path: 'assets/vectors/icon_drawer/icon_driwer8.svg',
+              path: AppAssets.vyiti,
               title: AppTexts.vyiti,
             ),
             Row(
               children: [
                 const SizedBox(width: 61),
-                SvgPicture.asset('assets/vectors/icon_drawer/icon_driwer8.svg'),
+                SvgPicture.asset(AppAssets.vyiti),
                 const SizedBox(width: 29),
                 InkWell(
                   child: const Text(

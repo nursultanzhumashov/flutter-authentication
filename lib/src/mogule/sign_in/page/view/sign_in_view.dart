@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/view/home_view/home_view.dart';
 
 import 'package:oracle_digital_app/src/mogule/sign_up/page/view/sign_up_page.dart';
@@ -32,8 +33,7 @@ class SignInView extends StatelessWidget {
               const SizedBox(height: 110),
               Align(
                   alignment: Alignment.center,
-                  child: SvgPicture.asset(
-                      'assets/vectors/icon_sign_in/icon_logo.svg')),
+                  child: SvgPicture.asset(AppAssets.logo)),
               const SizedBox(height: 54),
               const Text(
                 AppTexts.socialNetworks,
@@ -48,7 +48,7 @@ class SignInView extends StatelessWidget {
               ),
               PhoneFormField(
                 phone: phone,
-                path: 'assets/vectors/icon_sign_in/icon_phone.svg',
+                path: AppAssets.phone,
                 hinText: AppTexts.phoneSignIn,
               ),
               const SizedBox(height: 15),

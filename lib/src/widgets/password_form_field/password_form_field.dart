@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/logic/sign_in_cubit.dart';
 
 class PasswordFormField extends StatelessWidget {
@@ -43,7 +44,7 @@ class PasswordFormField extends StatelessWidget {
                 },
               ),
               prefixIcon: SvgPicture.asset(
-                'assets/vectors/icon_sign_in/icon_lock.svg',
+                AppAssets.lock,
               ),
             ),
           );

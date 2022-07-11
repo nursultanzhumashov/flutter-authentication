@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/view/draiwr_page/drawer_screen.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/widgets/kategiri_widget/kategiri_widget.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/widgets/keshber_widget/keshbek_widget.dart';
@@ -125,8 +126,7 @@ class HomeView extends StatelessWidget {
       backgroundColor: const Color(0xffFF6B00),
       onPressed: () {},
       child: IconButton(
-          onPressed: () {},
-          icon: SvgPicture.asset('assets/vectors/icon_botton/botton5.svg')),
+          onPressed: () {}, icon: SvgPicture.asset(AppAssets.buttom5)),
     );
   }
 
@@ -140,19 +140,19 @@ class HomeView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-            icon: SvgPicture.asset('assets/vectors/icon_botton/botton1.svg'),
+            icon: SvgPicture.asset(AppAssets.buttom1),
             onPressed: () {},
           ),
           IconButton(
-            icon: SvgPicture.asset('assets/vectors/icon_botton/botton2.svg'),
+            icon: SvgPicture.asset(AppAssets.buttom2),
             onPressed: () {},
           ),
           IconButton(
-            icon: SvgPicture.asset('assets/vectors/icon_botton/botton3.svg'),
+            icon: SvgPicture.asset(AppAssets.buttom3),
             onPressed: () {},
           ),
           IconButton(
-            icon: SvgPicture.asset('assets/vectors/icon_botton/botton4.svg'),
+            icon: SvgPicture.asset(AppAssets.buttom4),
             onPressed: () {},
           ),
         ],

@@ -23,4 +23,22 @@ class AppTexts {
   static const String vse = 'Всё';
   static const String magazin = 'Магазины';
   static const String novinki = 'Новинки';
+  static const String aktivOtdyh = 'Активный отдых';
+  static const String kinoTeatr = 'Кино и театры';
+  static const String kafeRestaron = 'Кафе и рестораны';
+  static const String dlyaDetei = 'Для детей';
+  static const String igrovKluby = 'Игровые клубы ';
+  static const String saynyBanyaOteli = 'Сауны, бани и отели';
+  static const String apteki = 'Аптеки';
+  static const String zoomagazin = 'Зоомагазины';
+  static const String avtoUslugiTovary = 'Автоуслуги и товары';
+  static const String kosmetika = 'Косметика и парфюмерия';
+  static const String optika = 'Оптика';
+  static const String aksesuaru = 'Аксессуары';
+  static const String tovaryDoma = 'Товары для дома';
+  static const String uvelernyeIzdelie = 'Ювелирные изделия';
+  static const String krasotaZdarove = 'Красота и здоровье';
+  static const String spaKosmetolog = 'SPA и косметология';
+  static const String himchistka = 'Химчистка';
+  static const String drugoe = 'Другое';
 }

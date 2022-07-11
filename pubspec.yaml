@@ -58,7 +58,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/vectors/icon_drawer/
-    - assets/vectors/icon_botton/
+    - assets/vectors/icon_bottom/
     - assets/vectors/icon_magazin/
     - assets/vectors/icon_sign_in/
     - assets/vectors/icon_kategori/

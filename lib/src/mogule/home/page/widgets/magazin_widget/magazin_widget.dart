@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/app_constants/app_texts/app_texts.dart';
+import 'package:oracle_digital_app/src/app_constants/assets/app_assets.dart';
 
 class MagazinWidget extends StatelessWidget {
   const MagazinWidget({
@@ -34,35 +35,35 @@ class MagazinWidget extends StatelessWidget {
             children: const [
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
               MagazinCard(
-                path: 'assets/vectors/icon_magazin/icon_apple.svg',
+                path: AppAssets.apple,
               ),
               SizedBox(width: 18),
             ],
