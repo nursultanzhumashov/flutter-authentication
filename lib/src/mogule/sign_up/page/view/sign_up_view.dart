@@ -2,11 +2,14 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/view/home_view/home_view.dart';
+import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_page.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/view/sign_in_view.dart';
+import 'package:oracle_digital_app/src/widgets/aut_card_fecebook_google/fecebook_google_card.dart';
 import 'package:oracle_digital_app/src/widgets/password_form_field/password_form_field.dart';
+import 'package:oracle_digital_app/src/widgets/phone_form_field/phone_form_field.dart';
 
 class SignUpView extends StatelessWidget {
-  SignUpView({
+  const SignUpView({
     super.key,
     required this.formKey,
     required this.email,
@@ -44,44 +47,14 @@ class SignUpView extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Card(
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset(
-                          'assets/vectors/icon_sign_in/icon_google.svg',
-                        )),
-                  ),
-                  const SizedBox(width: 60),
-                  Card(
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset(
-                          'assets/vectors/icon_sign_in/icon_facebook.svg',
-                        )),
-                  ),
-                ],
-              ),
+              const FecebookGoogleCard(),
               const SizedBox(
                 height: 43,
               ),
-              TextFormField(
-                //controller: email,
-                decoration: InputDecoration(
-                  // prefixIcon: SvgPicture.asset(
-                  //   'assets/vectors/icon_sign_in/icon_phone.svg',
-                  // ),
-                  hintText: 'Введите номер',
-                  hintStyle: const TextStyle(
-                    color: Color(0xff22519680),
-                  ),
-                  border: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.blue),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              PhoneFormField(
+                phone: phone,
+                path: 'assets/vectors/icon_sign_in/icon_phone.svg',
+                hinText: 'Введите номер',
               ),
               const SizedBox(height: 15),
               const PasswordFormField(
@@ -122,12 +95,7 @@ class SignUpView extends StatelessWidget {
                       ..onTap = () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => SignInView(
-                                    email: email,
-                                    formKey: formKey,
-                                    phone: phone,
-                                  )),
+                          MaterialPageRoute(builder: (context) => SignInPage()),
                         );
                       }),
               ),

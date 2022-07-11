@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oracle_digital_app/src/mogule/sign_in/page/logic/sign_in_cubit.dart';
 
 class PasswordFormField extends StatelessWidget {
@@ -17,25 +18,33 @@ class PasswordFormField extends StatelessWidget {
       child: BlocBuilder<FieldStateCubit, bool>(
         builder: (context, state) {
           return TextField(
+            cursorColor: const Color(0xff9CB1D0),
+
             //  autofocus: state,
+            style: const TextStyle(color: Color(0xff225196)),
             obscureText: state,
             decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: const BorderSide(width: 10, color: Colors.red),
+              enabledBorder: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                borderSide: BorderSide(color: Color(0xff9CB1D0)),
+              ),
+              focusedBorder: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+                borderSide: BorderSide(color: Color(0xff9CB1D0)),
               ),
               hintText: hintText,
-
-              hintStyle: const TextStyle(color: Color(0xff22519680)),
+              hintStyle: const TextStyle(
+                color: Color(0xff9CB1D0),
+              ),
               suffixIcon: IconButton(
                 icon: Icon(state ? Icons.visibility_off : Icons.visibility),
                 onPressed: () {
                   context.read<FieldStateCubit>().change();
                 },
               ),
-              // prefixIcon: SvgPicture.asset(
-              //   'assets/vectors/icon_sign_in/icon_lock.svg',
-              // ),
+              prefixIcon: SvgPicture.asset(
+                'assets/vectors/icon_sign_in/icon_lock.svg',
+              ),
             ),
           );
         },

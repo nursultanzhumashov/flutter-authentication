@@ -1,21 +1,22 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:oracle_digital_app/main.dart';
 import 'package:oracle_digital_app/src/mogule/home/page/view/home_view/home_view.dart';
-import 'package:oracle_digital_app/src/mogule/sign_in/page/widgets/sign_in_button.dart';
+
 import 'package:oracle_digital_app/src/mogule/sign_up/page/view/sign_up_page.dart';
+import 'package:oracle_digital_app/src/widgets/aut_card_fecebook_google/fecebook_google_card.dart';
 import 'package:oracle_digital_app/src/widgets/password_form_field/password_form_field.dart';
+import 'package:oracle_digital_app/src/widgets/phone_form_field/phone_form_field.dart';
 
 class SignInView extends StatelessWidget {
-  SignInView({
+  const SignInView({
     super.key,
     required this.formKey,
-    required this.email,
+    required this.pass,
     required this.phone,
   });
   final GlobalKey<FormState> formKey;
-  final TextEditingController email;
+  final TextEditingController pass;
   final TextEditingController phone;
 
   @override
@@ -40,53 +41,19 @@ class SignInView extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Card(
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset(
-                          'assets/vectors/icon_sign_in/icon_google.svg',
-                        )),
-                  ),
-                  const SizedBox(width: 60),
-                  Card(
-                    child: IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset(
-                          'assets/vectors/icon_sign_in/icon_facebook.svg',
-                        )),
-                  ),
-                ],
-              ),
+              const FecebookGoogleCard(),
               const SizedBox(
                 height: 43,
               ),
-              TextFormField(
-                cursorColor: Colors.red,
-                controller: email,
-                decoration: InputDecoration(
-                  // prefixIcon: SvgPicture.asset(
-                  //   'assets/vectors/icon_sign_in/icon_phone.svg',
-                  // ),
-                  hintText: 'Номер',
-                  labelStyle: TextStyle(color: Colors.red),
-                  hintStyle: const TextStyle(color: Color(0xff22519680)),
-                  border: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Colors.red,
-                      width: 10,
-                    ),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              PhoneFormField(
+                phone: phone,
+                path: 'assets/vectors/icon_sign_in/icon_phone.svg',
+                hinText: 'Номер',
               ),
               const SizedBox(height: 15),
               const PasswordFormField(
                 hintText: 'Пароль',
               ),
-
               const SizedBox(height: 20),
               SizedBox(
                 width: 153,
@@ -108,11 +75,6 @@ class SignInView extends StatelessWidget {
                   child: const Text('Войти'),
                 ),
               ),
-              // SignInEleveted(
-              //   formKey: formKey,
-              //   email: email.text,
-              //   phone: phone.text,
-              // ),
               const SizedBox(height: 15),
               RichText(
                 text: TextSpan(
